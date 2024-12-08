@@ -1,0 +1,83 @@
+﻿@{
+    ViewData["Title"] = "Sık Sorulan Sorular";
+}
+<link href="~/css/site.css" rel="stylesheet" />
+<header class="aynen">
+        VibeLink - Sıkça Sorulan Sorular (SSS)
+    </header>
+
+    <div class="container">
+
+        <h3>Genel Sorular</h3>
+        <div class="faq">
+            <p class="faq-question" onclick="toggleAnswer(0)">VibeLink nedir?</p>
+            <p class="faq-answer" id="answer0">VibeLink, insanları bir araya getiren bir sosyal etkinlik platformudur. Kullanıcılar, çevrimdışı ve çevrimiçi etkinlikler düzenleyebilir ve katılabilir, yeni insanlarla tanışabilir ve topluluklar oluşturabilirler.</p>
+
+            <p class="faq-question" onclick="toggleAnswer(1)">VibeLink’i nasıl kullanabilirim?</p>
+            <p class="faq-answer" id="answer1">VibeLink’i kullanmaya başlamak için önce kaydolmanız gerekir. Hesabınızı oluşturduktan sonra etkinlikler oluşturabilir, mevcut etkinliklere katılabilir ve diğer kullanıcılarla etkileşime geçebilirsiniz.</p>
+
+            <p class="faq-question" onclick="toggleAnswer(2)">VibeLink’te etkinlikler nasıl oluşturuluyor?</p>
+            <p class="faq-answer" id="answer2">Etkinlik oluşturmak için profil sayfanızdan “Etkinlik Oluştur” butonuna tıklayın. Etkinlik adı, tarih, açıklama ve yer bilgilerini girerek etkinliği oluşturabilirsiniz.</p>
+
+            <p class="faq-question" onclick="toggleAnswer(3)">VibeLink ücretsiz mi?</p>
+            <p class="faq-answer" id="answer3">Evet, VibeLink temel kullanımı ücretsizdir. Ancak, bazı özel özellikler ve premium içerikler için ücretli abonelik seçenekleri bulunmaktadır.</p>
+
+            <p class="faq-question" onclick="toggleAnswer(4)">Etkinlikler nasıl filtrelenir?</p>
+            <p class="faq-answer" id="answer4">Etkinlikleri tarih, kategori, konum ve popülerlik gibi kriterlere göre filtreleyebilirsiniz. Bu filtreler etkinlik sayfasında yer almaktadır ve ihtiyacınıza göre etkinlikleri bulmanızı sağlar.</p>
+        </div>
+
+        <h3>Hesap ve Üyelik</h3>
+        <div class="faq">
+            <p class="faq-question" onclick="toggleAnswer(5)">VibeLink hesabımı nasıl oluştururum?</p>
+            <p class="faq-answer" id="answer5">VibeLink hesabı oluşturmak için ana sayfada bulunan "Kayıt Ol" butonuna tıklayın. Gerekli bilgileri girdikten sonra hesabınızı oluşturabilirsiniz.</p>
+
+            <p class="faq-question" onclick="toggleAnswer(6)">Hesabımı nasıl silebilirim?</p>
+            <p class="faq-answer" id="answer6">Hesabınızı silmek için profil ayarlarına gidin ve "Hesabı Sil" seçeneğine tıklayın. Hesabınız kalıcı olarak silinecektir.</p>
+
+            <p class="faq-question" onclick="toggleAnswer(7)">Şifremi unuttum, ne yapmalıyım?</p>
+            <p class="faq-answer" id="answer7">Şifrenizi sıfırlamak için giriş sayfasındaki “Şifremi Unuttum” seçeneğine tıklayın. E-posta adresinizi girerek yeni bir şifre oluşturabilirsiniz.</p>
+        </div>
+
+        <h3>Etkinlikler ve Katılım</h3>
+        <div class="faq">
+            <p class="faq-question" onclick="toggleAnswer(8)">Etkinliklere nasıl katılabilirim?</p>
+            <p class="faq-answer" id="answer8">Etkinliklere katılmak için etkinlik sayfasına gidin ve "Katıl" butonuna tıklayın. Etkinlik tarihi yaklaştıkça katılım bilgileri size gönderilecektir.</p>
+
+            <p class="faq-question" onclick="toggleAnswer(9)">Bir etkinlik oluşturduğumda kimler katılabilir?</p>
+            <p class="faq-answer" id="answer9">Bir etkinlik oluşturduğunuzda, etkinliğiniz herkese açık ise platformdaki diğer kullanıcılar da katılabilir. Özel etkinlikler için davetiye gönderebilirsiniz.</p>
+
+            <p class="faq-question" onclick="toggleAnswer(10)">Etkinliklerim için ücretli bilet düzenleyebilir miyim?</p>
+            <p class="faq-answer" id="answer10">Evet, etkinlikleriniz için bilet satışı yapabilir ve bilet fiyatlarını belirleyebilirsiniz. Ücretli etkinlikler için ödeme entegrasyonu sağlanmaktadır.</p>
+        </div>
+
+        <h3>Güvenlik ve Gizlilik</h3>
+        <div class="faq">
+            <p class="faq-question" onclick="toggleAnswer(11)">VibeLink güvenli mi?</p>
+            <p class="faq-answer" id="answer11">Evet, VibeLink güvenliği ön planda tutarak kullanıcıların kişisel bilgilerini korur. Ayrıca, etkinliklerde kullanıcıların güvenliği için belirli önlemler alır.</p>
+
+            <p class="faq-question" onclick="toggleAnswer(12)">Kişisel bilgilerim nasıl korunuyor?</p>
+            <p class="faq-answer" id="answer12">Kişisel bilgileriniz, gizlilik politikalarımıza uygun olarak korunur. VibeLink, kullanıcı verilerini üçüncü şahıslarla paylaşmaz ve yalnızca platformun işlevselliği için kullanır.</p>
+        </div>
+
+        <h3>Yardım ve Destek</h3>
+        <div class="faq">
+            <p class="faq-question" onclick="toggleAnswer(13)">Destek almak için ne yapmalıyım?</p>
+            <p class="faq-answer" id="answer13">Yardım almak için site üzerindeki "İletişim" bölümünden bizimle iletişime geçebilirsiniz. Teknik sorunlar için destek ekibimiz size en kısa sürede yardımcı olacaktır.</p>
+
+            <p class="faq-question" onclick="toggleAnswer(14)">Bir etkinlikte yaşadığım sorunu nasıl bildirebilirim?</p>
+            <p class="faq-answer" id="answer14">Etkinlik ile ilgili yaşadığınız herhangi bir sorunu bildirmek için etkinlik sayfasında yer alan "Sorun Bildir" butonuna tıklayabilirsiniz.</p>
+        </div>
+
+        <a href="#" class="cta-button">Daha Fazla Yardım Al</a>
+    </div>
+
+    <script>
+        function toggleAnswer(index) {
+            var answer = document.getElementById("answer" + index);
+            if (answer.classList.contains("active")) {
+                answer.classList.remove("active");
+            } else {
+                answer.classList.add("active");
+            }
+        }
+    </script>
