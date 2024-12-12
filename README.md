@@ -1,5 +1,6 @@
 # VibeLink'e Hoşgeldin!
 Bu web sitesi, kullanıcıların etkinlikler oluşturmasına, katılmasına ve sosyal bağlantılar kurmasına olanak tanır. Kullanıcılar, ilgi alanlarına göre farklı etkinlikler keşfeder ve topluluklarla etkileşimde bulunur. Hem fiziksel hem de çevrimiçi etkinlikler düzenlenebilir.
+![VibeLink Poster](Assets/PictureScreen.PNG)
 
 ## Ana Özellikler
 
