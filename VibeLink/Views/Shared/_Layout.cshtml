@@ -54,7 +54,7 @@
                 }
 
         .center {
-            width: 100%; /* Sadece center alanını kullanmak için */
+            width: 100%; 
             padding: 20px;
         }
 
@@ -67,15 +67,20 @@
             <nav>
                 <ul class="nav">
                     <li class="nav-item"><a class="nav-link" href="/">Ana Sayfa</a></li>
-                    <!--  <li class="nav-item"><a class="nav-link" href="@Url.Action("Activ","Home")">Etkinlikler</a></li> -->
-                    @if (ViewData["IsKindexPage"] != null && (bool)ViewData["IsKindexPage"])
-                    {
-                        <li class="nav-item"><a class="nav-link" href="@Url.Action("Activ","Home")">Etkinlikler</a></li>
-                    }
-                    <li class="nav-item"><a class="nav-link" href="@Url.Action("Login","Home")">Giriş Yap</a></li>
-                    <li class="nav-item"><a class="nav-link" href="@Url.Action("Register","Home")">Kayıt Ol</a></li>
+                  
                     <li class="nav-item"><a class="nav-link" href="@Url.Action("About","Home")">Hakkımızda</a></li>
                     <li class="nav-item"><a class="nav-link" href="@Url.Action("sss","Home")">SSS</a></li>
+                    <li>
+                        @if (User.Identity.IsAuthenticated)
+                        {
+                        <li class="nav-item"><a class="nav-link" href="@Url.Action("Activ", "Home")">Etkinlikler</a></li>
+                        }
+                        else
+                        {
+                        <li class="nav-item"><a class="nav-link" href="@Url.Action("Login", "Home")">Giriş Yap</a></li>
+                        <li class="nav-item"><a class="nav-link" href="@Url.Action("Register", "Home")">Kayıt Ol</a></li>
+                        } 
+                    </li>
                 </ul>
             </nav>
         </div>
@@ -83,9 +88,8 @@
 </header>
 <body>
     <div class="container-fluid">
-        <!-- Center Section -->
         <div class="center">
-            @RenderBody() <!-- Main Content -->
+            @RenderBody() 
         </div>
     </div>
 </body>
