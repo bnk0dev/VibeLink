@@ -67,20 +67,11 @@
             <nav>
                 <ul class="nav">
                     <li class="nav-item"><a class="nav-link" href="/">Ana Sayfa</a></li>
-                  
                     <li class="nav-item"><a class="nav-link" href="@Url.Action("About","Home")">Hakkımızda</a></li>
                     <li class="nav-item"><a class="nav-link" href="@Url.Action("sss","Home")">SSS</a></li>
-                    <li>
-                        @if (User.Identity.IsAuthenticated)
-                        {
-                        <li class="nav-item"><a class="nav-link" href="@Url.Action("Activ", "Home")">Etkinlikler</a></li>
-                        }
-                        else
-                        {
-                        <li class="nav-item"><a class="nav-link" href="@Url.Action("Login", "Home")">Giriş Yap</a></li>
-                        <li class="nav-item"><a class="nav-link" href="@Url.Action("Register", "Home")">Kayıt Ol</a></li>
-                        } 
-                    </li>
+                    <li class="nav-item"><a class="nav-link" href="@Url.Action("Activ", "Home")">Etkinlikler</a></li>
+                    <li class="nav-item"><a class="nav-link" href="@Url.Action("Login", "Log")">Giriş Yap</a></li>
+                    <li class="nav-item"><a class="nav-link" href="@Url.Action("Register", "Log")">Kayıt Ol</a></li> 
                 </ul>
             </nav>
         </div>

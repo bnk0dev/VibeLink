@@ -17,23 +17,24 @@ namespace VibeLink.Controllers
             return View();
         }
 
+        public ActionResult Profile()
+        {
+            return View();
+        }
         
+        public ActionResult ChangePassword()
+        {
+            return View();
+        }
+
         public ActionResult Activ()
         {
             return View();
         }
 
-        public ActionResult Login()
-        {
-            return View();
-        }
+       
 
         public ActionResult sss()
-        {
-            return View();
-        }
-
-        public ActionResult Register()
         {
             return View();
         }
