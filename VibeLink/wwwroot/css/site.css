@@ -1,25 +1,19 @@
 body {
-    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     background-color: #f9f9f9;
     margin: 0;
     padding: 0;
 }
 
 header {
-    background: linear-gradient(135deg, #9b59b6, #ff69b4);
+    background: linear-gradient(135deg, #20232A, #3C3F51, #0ce8e1);
     color: white;
-    padding: 0px 0;
+    padding: 10px 20px;
+    display: flex;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
-
-.aynen{
-    position:fixed;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    border-radius: 50px;
-    margin-top: 30px;
-
-}
-
 
 .nav-link {
     color: white !important;
@@ -28,12 +22,13 @@ header {
 }
 
     .nav-link:hover {
-        color: #f8f9fa !important;
-        background-color: #f1c4e5;
+        color: white !important;
+        background-color: #0ce8e1;
         border-radius: 20px;
     }
 
 footer {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     background-color: #2c2f33;
     color: white;
     padding: 20px 0;
@@ -42,11 +37,16 @@ footer {
 }
 
     footer a {
-        color: #ff69b4;
+        color: #0ce8e1;
         text-decoration: none;
     }
 
         footer a:hover {
-            color: #9b59b6;
+            color: #0ce8e1;
             text-decoration: underline;
         }
+
+.center {
+    width: 100%;
+    padding: 20px;
+}

@@ -1,10 +1,13 @@
 ﻿@{
     ViewData["Title"] = "Ana Sayfa";
 }
+<link href="~/css/site.css" rel="stylesheet"/>
+<div>
+    <img src="img/logo.png" alt="VibeLink Logo">
+</div>
 
-
-<div class="hero">
-    <h1>VibeLink'e Hoş Geldiniz!</h1>
+<div>
+    <h1 style="font-weight: bold;">VibeLink'e Hoş Geldiniz!</h1>
     <p>Sosyal etkinlikler oluşturun, katılın ve yeni insanlarla tanışarak eğlenceyi keşfedin.</p>
     <a href="@Url.Action("Profile","Person")" class="btn-get-started">Hemen Başlayın</a>
 </div>
