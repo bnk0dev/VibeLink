@@ -2,19 +2,14 @@
 
 namespace VibeLink.Controllers
 {
-    public class PersonController : Controller
+    public class SettingsController : Controller
     {
         public IActionResult Index()
         {
             return View();
         }
 
-        public ActionResult Kindex()
-        {
-            return View();
-        }
-
-        public ActionResult Profile()
+        public ActionResult Settings()
         {
             return View();
         }

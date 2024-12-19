@@ -1,0 +1,180 @@
+﻿@{
+    Layout = "~/Views/Shared/_UserLayout.cshtml";
+    ViewBag.Title = "Ayarlar";
+}
+
+<style>
+    body {
+        background-color: #20232A;
+        color: #ffffff;
+        font-family: Arial, sans-serif;
+    }
+
+    .settings-header {
+        background: linear-gradient(90deg, #20232A, #3C3F51);
+        color: #ffffff;
+        padding: 30px;
+        text-align: center;
+        border-bottom: 4px solid #0ce8e1;
+    }
+
+        .settings-header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+
+    .settings-container {
+        max-width: 1000px;
+        margin: 30px auto;
+        background: linear-gradient(120deg, #20232A, #3C3F51);
+        border-radius: 15px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+        padding: 25px;
+    }
+
+    .settings-section {
+        margin-bottom: 30px;
+        padding: 20px;
+        background: #3C3F51;
+        border-radius: 10px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+        border: 1px solid #0ce8e1;
+    }
+
+        .settings-section h3 {
+            color: #0ce8e1;
+            margin-bottom: 15px;
+        }
+
+    .stats-container {
+        background-color: #20232A;
+        border: 1px solid #0ce8e1;
+        border-radius: 15px;
+        padding: 20px;
+        margin-bottom: 30px;
+        text-align: center;
+    }
+
+        .stats-container h3 {
+            color: #0ce8e1;
+        }
+
+    .stats {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 20px;
+    }
+
+        .stats div {
+            text-align: center;
+            padding: 10px;
+        }
+
+            .stats div span {
+                display: block;
+                font-size: 2em;
+                font-weight: bold;
+                color: #0ce8e1;
+            }
+
+    .btn-save {
+        background-color: #0ce8e1;
+        color: #20232A;
+        border: none;
+        transition: background-color 0.3s;
+    }
+
+        .btn-save:hover {
+            background-color: #0bbcc7;
+        }
+
+    .form-control {
+        background-color: #3C3F51;
+        color: #ffffff;
+        border: 1px solid #0ce8e1;
+    }
+
+        .form-control:focus {
+            border-color: #0ce8e1;
+            box-shadow: 0 0 8px #0ce8e1;
+        }
+</style>
+
+    <div class="settings-header">
+        <h1>Ayarlar</h1>
+    </div>
+
+    <div class="settings-container">
+        <!-- Kullanıcı İstatistikleri -->
+        <div class="stats-container">
+            <h3>Kullanıcı İstatistikleri</h3>
+            <div class="stats">
+                <div>
+                    <span>12</span>
+                    Katıldığınız Etkinlikler
+                </div>
+                <div>
+                    <span>7</span>
+                    Oluşturduğunuz Etkinlikler
+                </div>
+                <div>
+                    <span>92</span>
+                    Sosyallik Puanı
+                </div>
+            </div>
+        </div>
+
+        <!-- Genel Ayarlar -->
+        <div class="settings-section">
+            <h3>Genel Ayarlar</h3>
+            <form>
+                <div class="mb-3">
+                    <label for="username" class="form-label">Kullanıcı Adı</label>
+                    <input type="text" id="username" class="form-control" placeholder="Kullanıcı adınızı girin">
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">E-posta</label>
+                    <input type="email" id="email" class="form-control" placeholder="E-posta adresinizi girin">
+                </div>
+                <button type="submit" class="btn btn-save">Kaydet</button>
+            </form>
+        </div>
+
+        <!-- Güvenlik Ayarları -->
+        <div class="settings-section">
+            <h3>Güvenlik Ayarları</h3>
+            <form>
+                <div class="mb-3">
+                    <label for="password" class="form-label">Yeni Şifre</label>
+                    <input type="password" id="password" class="form-control" placeholder="Yeni şifrenizi girin">
+                </div>
+                <div class="mb-3">
+                    <label for="confirm-password" class="form-label">Şifreyi Onayla</label>
+                    <input type="password" id="confirm-password" class="form-control" placeholder="Şifrenizi tekrar girin">
+                </div>
+                <button type="submit" class="btn btn-save">Kaydet</button>
+            </form>
+        </div>
+
+        <!-- Bildirim Ayarları -->
+        <div class="settings-section">
+            <h3>Bildirim Ayarları</h3>
+            <form>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="email-notifications" checked>
+                    <label class="form-check-label" for="email-notifications">E-posta Bildirimleri</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="sms-notifications">
+                    <label class="form-check-label" for="sms-notifications">SMS Bildirimleri</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="push-notifications">
+                    <label class="form-check-label" for="push-notifications">Anlık Bildirimler</label>
+                </div>
+                <button type="submit" class="btn btn-save">Kaydet</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>

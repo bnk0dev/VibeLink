@@ -17,24 +17,17 @@ namespace VibeLink.Controllers
             return View();
         }
 
-        public ActionResult Profile()
-        {
-            return View();
-        }
-        
-        public ActionResult ChangePassword()
-        {
-            return View();
-        }
-
-        public ActionResult Activ()
-        {
-            return View();
-        }
-
-       
-
         public ActionResult sss()
+        {
+            return View();
+        }
+     
+        public ActionResult Settings()
+        {
+            return View();
+        }
+
+        public ActionResult Events()
         {
             return View();
         }
@@ -51,11 +44,6 @@ namespace VibeLink.Controllers
                 ViewBag.ErrorMessage = "Geçersiz kullanýcý adý veya þifre !";
                 return View();
             }
-        }
-
-        public ActionResult Kindex()
-        {
-            return View();
         }
         public IActionResult Index()
         {
