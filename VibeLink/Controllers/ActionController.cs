@@ -13,7 +13,5 @@ namespace VibeLink.Controllers
         {
             return View();
         }
-
-
     }
 }
