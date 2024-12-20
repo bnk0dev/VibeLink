@@ -12,5 +12,17 @@ namespace VibeLink.Controllers
         {
             return View();
         }
+        public ActionResult BrowseEvents()
+        {
+            return View();
+        }
+        public ActionResult CreateEvent()
+        {
+            return View();
+        }
+        public ActionResult MyEventHistory()
+        {
+            return View();
+        }
     }
 }
