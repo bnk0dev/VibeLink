@@ -82,12 +82,9 @@ footer {
 
 
 
-body {
-    background-color: #20232A;
-    color: white;
-}
 
-/* Kutunun arka planý için geçiþli renk */
+
+
 .shadow-lg {
     background: linear-gradient(to right, #20232A, #3C3F51, #0CE8E1);
     border-radius: 10px;
@@ -95,7 +92,7 @@ body {
     box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.5);
 }
 
-/* Form içindeki giriþ alanlarý */
+
 .form-control {
     background: rgba(255, 255, 255, 0.1);
     border: 1px solid rgba(255, 255, 255, 0.2);
@@ -114,7 +111,6 @@ body {
         box-shadow: 0 0 8px rgba(12, 232, 225, 0.8);
     }
 
-/* Kayýt Ol düðmesi */
 .btn-gradient {
     background: linear-gradient(90deg, #20232A, #3C3F51, #0CE8E1);
     color: white;
