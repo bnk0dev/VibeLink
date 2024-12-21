@@ -1,70 +1,63 @@
 ﻿@{
     ViewData["Title"] = "Ana Sayfa";
 }
-<link href="~/css/site.css" rel="stylesheet"/>
+<link href="~/css/site.css" rel="stylesheet" />
 
-<div>
-    <img src="~/img/logo.png" alt="VibeLink Logo" />
-    <h1 style="font-weight: bold;">VibeLink'e Hoş Geldiniz!</h1>
-    <p>Sosyal etkinlikler oluşturun, katılın ve yeni insanlarla tanışarak eğlenceyi keşfedin.</p>
+<div class="welcome-section">
+    <img src="~/img/logo.png" alt="VibeLink Logo" class="logo" />
+    <h1>VibeLink'e Hoş Geldiniz!</h1>
+    <p class="intro-text">
+        Sosyal etkinlikler oluşturun, katılın ve yeni insanlarla tanışarak eğlenceyi keşfedin.
+        Hayatınıza heyecan katmak için hemen keşfetmeye başlayın!
+    </p>
 </div>
 
-<div class="container info-section" style="height:auto;">
+<div class="container info-section">
     <div class="row gy-4">
         <!-- Etkinlik Oluşturun -->
         <div class="col-lg-4">
             <div class="info-box">
-                <div class="section-content">
-                    <a href="https://localhost:7186/Log/Login">
-                    <img src="~/img/creatEvent.jpeg" alt="Etkinlik" width="80" height="80">
-                    </a>
-                    <h3>Etkinlik Oluşturun</h3>
-                    <p>VibeLink, kullanıcılarının kendi etkinliklerini oluşturmasına olanak tanır. 
-                        İster bir arkadaş buluşması, ister bir konser ya da seminer olsun, platformda herhangi bir etkinlik düzenlemek kolaydır. 
-                        Etkinlik oluşturma süreci, kullanıcıların tarih, saat, yer ve etkinlik türünü belirleyerek detaylı bir etkinlik sayfası 
-                        hazırlamalarını sağlar. Bu özellik, katılımcıları davet etmek ve etkinliklerini geniş bir kitleyle paylaşmak isteyenler için 
-                        ideal bir araçtır. Ayrıca, etkinlik sayfalarında açıklamalar, görseller ve bağlantılar ekleyerek etkinliğinizi daha çekici ve 
-                        bilgilendirici hale getirebilirsiniz.</p>
-                        <br />
-                    <a href="https://localhost:7186/Log/Login">Bize Katılın</a>
-                </div>
+                <a href="https://localhost:7186/Log/Login">
+                    <img src="~/img/creatEvent.jpeg" alt="Etkinlik" class="info-image">
+                </a>
+                <h3>Etkinlik Oluşturun</h3>
+                <p>
+                    Kendi etkinliklerinizi oluşturun ve arkadaşlarınızı davet ederek keyifli anlar paylaşın. 
+                    Etkinliklerinizi özel hale getirerek katılımı artırabilir, farklı konularda ilgi çekici aktiviteler düzenleyebilirsiniz. 
+                    Bu sayede daha fazla kişiye ulaşarak topluluğunuzu genişletebilirsiniz. 
+                    Katılımcıların ilgisini çekecek içerikler oluşturarak unutulmaz anlar yaratabilirsiniz.
+                </p>
+                <a href="https://localhost:7186/Log/Login" class="btn-gradient">Bize Katılın</a>
             </div>
         </div>
         <!-- Etkinliklere Katılın -->
         <div class="col-lg-4">
             <div class="info-box">
-                <div class="section-content">
-                    <a href="https://localhost:7186/Log/Login">
-                    <img src="~/img/joinEvents.jpeg" alt="Katıl" width="80" height="80">
-                    </a>
-                    <h3>Etkinliklere Katılın</h3>
-                    <p>VibeLink'te katılmak istediğiniz etkinlikleri keşfetmek oldukça kolay. 
-                        Kullanıcılar, platformda yer alan çeşitli etkinlikleri filtreleyerek ilgi alanlarına uygun etkinliklere katılabilirler. 
-                        Bir etkinliğe katılmak için tek yapmanız gereken etkinlik sayfasını ziyaret etmek ve katılımınızı onaylamaktır. 
-                        Bu özellik, insanların yeni insanlarla tanışmalarını ve ilgi duydukları aktivitelerde yer almalarını teşvik eder. 
-                        VibeLink, katılımcıların etkinliklerin detaylarına kolayca erişmesini ve etkinlik güncellemelerini takip etmelerini sağlar.</p>
-                    <br />
-                    <a href="https://localhost:7186/Log/Login">Bize Katılın</a>
-                </div>
+                <a href="https://localhost:7186/Log/Login">
+                    <img src="~/img/joinEvents.jpeg" alt="Katıl" class="info-image">
+                </a>
+                <h3>Etkinliklere Katılın</h3>
+                <p>
+                    İlginizi çeken etkinliklere katılarak yeni deneyimler edinin ve farklı bakış açıları kazanın. 
+                    Katılmak istediğiniz etkinlikleri seçerek, ilgi alanlarınıza uygun insanlarla tanışma fırsatını yakalayabilirsiniz. 
+                    Etkinliklere katıldıkça farklı kültürleri keşfederken kendinizi geliştirebilir, unutulmaz anılar biriktirebilirsiniz.
+                </p>
+                <a href="https://localhost:7186/Log/Login" class="btn-gradient">Bize Katılın</a>
             </div>
         </div>
         <!-- Sosyalleşin -->
         <div class="col-lg-4">
             <div class="info-box">
-                <div class="section-content">
-                    <a href="https://localhost:7186/Log/Login">
-                    <img src="~/img/socialize.jpeg" alt="Sosyalleş" width="80" height="80">
-                    </a>
-                    <h3>Sosyalleşin</h3>
-                    <p>VibeLink, sosyal bağlantılar kurmak ve yeni arkadaşlar edinmek için mükemmel bir platformdur. 
-                        Etkinliklerde insanlarla tanışarak, paylaşımlar yaparak ve sohbet odalarına katılarak sosyalleşebilirsiniz. 
-                        Platform, sosyal etkileşimleri kolaylaştıran araçlar sunar ve katılımcıların birbirleriyle iletişim kurmasını, 
-                        fikir alışverişinde bulunmasını sağlar. Ayrıca, kullanıcılar birbirlerinin profillerini görüntüleyebilir ve ortak 
-                        ilgi alanlarına sahip kişilerle bağlantı kurabilir. Sosyalleşme, sadece etkinliklerde değil, her zaman aktif olarak 
-                        gerçekleşen bir süreçtir, bu da VibeLink'i dinamik ve sürekli büyüyen bir sosyal ağ haline getirir.</p>
-                    <br />
-                    <a href="https://localhost:7186/Log/Login">Bize Katılın</a>
-                </div>
+                <a href="https://localhost:7186/Log/Login">
+                    <img src="~/img/socialize.jpeg" alt="Sosyalleş" class="info-image">
+                </a>
+                <h3>Sosyalleşin</h3>
+                <p>
+                    Yeni insanlarla tanışın, fikirlerinizi paylaşın ve kendinizi daha geniş bir topluluğun parçası olarak hissedin. 
+                    Sosyalleşmek, insanlarla güçlü bağlar kurmak için harika bir fırsattır. 
+                    Farklı görüşlere açık olarak dinamik bir topluluk oluşturabilir, ortak ilgi alanlarında derinlemesine sohbetler gerçekleştirebilirsiniz.
+                </p>
+                <a href="https://localhost:7186/Log/Login" class="btn-gradient">Bize Katılın</a>
             </div>
         </div>
     </div>

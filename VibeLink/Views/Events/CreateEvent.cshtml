@@ -7,19 +7,19 @@
     <div class="row justify-content-center">
         <div class="col-12 col-md-8">
             <div class="text-center mb-4">
-                <img src="~/Content/images/create_event_logo.png" alt="Etkinlik Oluştur Logo" class="img-fluid mb-3"/>
-                <h2 class="display-4">Yeni Etkinlik Oluştur</h2>
-                <p class="lead">Topluluğunuzla buluşmak için etkinliğinizi hemen oluşturun!</p>
+                <img src="~/img/creatEvent.jpeg" alt="Etkinlik Oluştur Logo" class="img-fluid mb-3" width="250px" height="250px"/>
+                <h2 class="display-4" style="color:white">Yeni Etkinlik Oluştur</h2>
+                <p class="lead" style="color:white">Topluluğunuzla buluşmak için etkinliğinizi hemen oluşturun!</p>
             </div>
 
             <form method="post" action="@Url.Action("Create", "Event")" class="shadow-lg p-4 rounded">
                 <div class="form-group">
-                    <label for="EventName">Etkinlik Adı</label>
+                    <label for="EventName" style="color:white">Etkinlik Adı</label>
                     <input type="text" class="form-control" id="EventName" name="EventName" placeholder="Etkinlik adı girin" required />
                 </div>
 
                 <div class="form-group">
-                    <label for="EventCity">Şehir</label>
+                    <label for="EventCity" style="color:white">Şehir</label>
                     <select class="form-control" id="EventCity" name="EventCity" required>
                         <option value="">Şehir Seçin</option>
                         <option value="Istanbul">İstanbul</option>
@@ -32,7 +32,7 @@
                 </div>
 
                 <div class="form-group">
-                    <label for="EventTopic">Etkinlik Konusu</label>
+                    <label for="EventTopic" style="color:white">Etkinlik Konusu</label>
                     <select class="form-control" id="EventTopic" name="EventTopic" required>
                         <option value="">Konu Seçin</option>
                         <option value="Technology">Teknoloji</option>
@@ -44,22 +44,22 @@
                 </div>
 
                 <div class="form-group">
-                    <label for="MaxParticipants">Kişi Sınırı</label>
+                    <label for="MaxParticipants" style="color:white">Kişi Sınırı</label>
                     <input type="number" class="form-control" id="MaxParticipants" name="MaxParticipants" min="1" max="500" placeholder="Kişi sınırını belirleyin" required />
                 </div>
 
                 <div class="form-group">
-                    <label for="EventDate">Etkinlik Tarihi</label>
+                    <label for="EventDate" style="color:white">Etkinlik Tarihi</label>
                     <input type="date" class="form-control" id="EventDate" name="EventDate" required />
                 </div>
 
                 <div class="form-group">
-                    <label for="EventTime">Etkinlik Saati</label>
+                    <label for="EventTime" style="color:white">Etkinlik Saati</label>
                     <input type="time" class="form-control" id="EventTime" name="EventTime" required />
                 </div>
 
                 <div class="form-group">
-                    <label for="EventDescription">Etkinlik Açıklaması</label>
+                    <label for="EventDescription" style="color:white">Etkinlik Açıklaması</label>
                     <textarea class="form-control" id="EventDescription" name="EventDescription" rows="4" placeholder="Etkinlik hakkında açıklama yapın" required></textarea>
                 </div>
 

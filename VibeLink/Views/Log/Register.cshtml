@@ -5,30 +5,30 @@
     <div class="row justify-content-center">
         <div class="col-12 col-md-8">
             <div class="text-center mb-4">
-                <h2 class="display-4">Kayıt Ol</h2>
-                <p class="lead">Topluluğumuza katılmak için hızlıca kayıt olun!</p>
+                <h2 class="display-4" style="color:white">Kayıt Ol</h2>
+                <p class="lead" style="color:white">Topluluğumuza katılmak için hızlıca kayıt olun!</p>
             </div>
 
             <form method="post" action="/Account/Register" class="shadow-lg">
                 <div class="form-group">
-                    <label for="Username">Kullanıcı Adı</label>
+                    <label for="Username" style="color:white">Kullanıcı Adı</label>
                     <input type="text" class="form-control" id="Username" name="Username" placeholder="Kullanıcı Adı" required />
                 </div>
 
                 <div class="form-group row">
                     <div class="col">
-                        <label for="FirstName">Ad</label>
+                        <label for="FirstName" style="color:white">Ad</label>
                         <input type="text" class="form-control" id="FirstName" name="FirstName" placeholder="Ad" required oninput="this.value = this.value.replace(/[0-9]/g, '')" />
                     </div>
                     <div class="col">
-                        <label for="LastName">Soyad</label>
+                        <label for="LastName" style="color:white">Soyad</label>
                         <input type="text" class="form-control" id="LastName" name="LastName" placeholder="Soyad" required oninput="this.value = this.value.replace(/[0-9]/g, '')" />
                     </div>
                 </div>
 
                 <div class="form-group row">
                     <div class="col">
-                        <label for="Gender">Cinsiyet</label>
+                        <label for="Gender" style="color:white">Cinsiyet</label>
                         <select class="form-control" id="Gender" name="Gender" required>
                             <option value="Erkek">Erkek</option>
                             <option value="Kadın">Kadın</option>
@@ -36,7 +36,7 @@
                         </select>
                     </div>
                     <div class="col">
-                        <label for="Age">Yaş</label>
+                        <label for="Age" style="color:white">Yaş</label>
                         <select class="form-control" id="Age" name="Age" required>
                             <option value="">Yaş</option>
                             @for (int i = 18; i <= 65; i++)
@@ -46,7 +46,7 @@
                         </select>
                     </div>
                     <div class="col">
-                        <label for="City">Şehir</label>
+                        <label for="City" style="color:white">Şehir</label>
                         <select class="form-control" id="City" name="City" required>
                             <option value="">Şehir</option>
                             @{
@@ -73,12 +73,12 @@
                 </div>
 
                 <div class="form-group">
-                    <label for="TCNo">Kimlik Numarası (İsteğe Bağlı)</label>
+                    <label for="TCNo" style="color:white">Kimlik Numarası (İsteğe Bağlı)</label>
                     <input type="text" class="form-control" id="TCNo" name="TCNo" placeholder="Kimlik Numarası" maxlength="11" oninput="this.value = this.value.replace(/[^0-9]/g, '')" />
                 </div>
                 <br />
                 <button type="submit" class="btn-gradient btn btn-primary btn-lg w-100">Kayıt Ol</button>
-                <p class="text-center mt-3">Hesabınız var mı? <a href="@Url.Action("Login","Log")" class="text-primary">Giriş Yap</a></p>
+                <p class="text-center mt-3" style="color:white">Hesabınız var mı? <a href="@Url.Action("Login","Log")" class="text-primary">Giriş Yap</a></p>
             </form>
         </div>
     </div>

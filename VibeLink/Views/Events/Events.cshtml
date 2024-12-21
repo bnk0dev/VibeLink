@@ -4,90 +4,164 @@
 }
 
 <style>
+    body {
+        font-family: 'Arial', sans-serif;
+        background-color: #f4f4f9;
+        margin: 0;
+        padding: 0;
+        color: white;
+    }
+    .boddy{
+        background: linear-gradient(to right, #20232A, #3C3F51, #0CE8E1);
+        color: white;
+    }
+
+
     .event-section {
-        background-color: #f9f9f9;
+        background-color: #ffffff;
         transition: all 0.3s ease;
+        border-radius: 10px;
+        padding: 20px;
+        margin-bottom: 30px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
     }
 
         .event-section:hover {
-            background-color: #e2e2e2;
+            background-color: #f9f9f9;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
         }
 
         .event-section h3 {
             font-size: 2em;
             font-weight: bold;
-            color: #333;
+            color: #0056b3;
             text-align: center;
-        }
-
-        .event-section img {
-            max-width: 100%;
-            height: auto;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            margin-bottom: 15px;
         }
 
         .event-section p {
             font-size: 1.1em;
+            line-height: 1.6;
             color: #555;
             text-align: center;
         }
 
-        .event-section .btn {
+        .event-section img {
             display: block;
-            width: 100%;
-            padding: 12px 0;
-            font-size: 1.2em;
-            text-align: center;
-            border-radius: 5px;
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            margin: 15px auto;
+            transition: transform 0.3s ease;
         }
+
+            .event-section img:hover {
+                transform: scale(1.05);
+            }
 
     .card {
         background-color: #fff;
         border: 1px solid #ddd;
         border-radius: 8px;
+        overflow: hidden;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        margin-bottom: 15px;
     }
 
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+        }
+
     .card-body {
-        padding: 20px;
+        padding: 15px;
     }
 
     .card-title {
-        font-size: 1.5em;
+        font-size: 1.3em;
         font-weight: bold;
         color: #333;
+        margin-bottom: 10px;
     }
 
     .card-text {
-        font-size: 1.1em;
-        color: #666;
-    }
-
-   
-
-    .event-section h3 {
-        font-size: 1.8em;
-    }
-
-    .event-section p {
         font-size: 1em;
+        color: #555;
+        margin-bottom: 10px;
     }
 
     .btn {
-        padding: 10px 0;
+        display: block;
+        width: 100%;
+        text-align: center;
         font-size: 1em;
+        padding: 10px 0;
+        border-radius: 5px;
+        transition: all 0.3s ease;
+        text-decoration: none;
     }
 
+    .btn-primary {
+        background-color: #007bff;
+        color: #fff;
+        border: none;
     }
+
+        .btn-primary:hover {
+            background-color: #0056b3;
+        }
+
+    .btn-secondary {
+        background-color: #6c757d;
+        color: #fff;
+        border: none;
+    }
+
+        .btn-secondary:hover {
+            background-color: #5a6268;
+        }
+
+    .btn-info {
+        background-color: #17a2b8;
+        color: #fff;
+        border: none;
+    }
+
+        .btn-info:hover {
+            background-color: #117a8b;
+        }
+
+    .btn-warning {
+        background-color: #ffc107;
+        color: #212529;
+        border: none;
+    }
+
+        .btn-warning:hover {
+            background-color: #d39e00;
+        }
+
+    .btn-success {
+        background-color: #28a745;
+        color: #fff;
+        border: none;
+    }
+
+        .btn-success:hover {
+            background-color: #218838;
+        }
 </style>
+
 <div class="container mt-4">
-    <div class="event-section mb-5 p-4 border rounded shadow">
+    <div class="boddy event-section mb-5 p-4 border rounded shadow">
         <h3 class="display-4">Etkinlik Oluştur</h3>
-        <p class="lead">Yeni bir etkinlik oluşturun ve topluluğunuza katılmalarını sağlayın. Her türlü etkinliği organize edebilir, katılımcılarla etkileşime geçebilirsiniz.</p>
+        <p class="lead" style="color:white">Yeni bir etkinlik oluşturun ve topluluğunuza katılmalarını sağlayın. Her türlü etkinliği organize edebilir, katılımcılarla etkileşime geçebilirsiniz.</p>
 
         <img src="~/img/creatEvent.jpeg" alt="Etkinlik Oluştur" class="img-fluid mb-3 rounded shadow-lg" width="250px" height="250px" />
 
-        <p><strong>Özellikler:</strong></p>
+        <p style="color:white"><strong>Özellikler:</strong></p>
         <ul>
             <li><strong>Kolay Etkinlik Planlaması:</strong> Sadece birkaç adımda etkinliğinizi oluşturabilirsiniz.</li>
             <li><strong>Katılımcı Yönetimi:</strong> Etkinliğinize katılacak kişileri kolayca yönetebilirsiniz.</li>
@@ -97,27 +171,27 @@
         <a href="@Url.Action("CreateEvent", "Events")" class="btn btn-primary btn-lg">Etkinlik Oluştur</a>
     </div>
 
-    <div class="event-section mb-5 p-4 border rounded shadow">
+    <div class="boddy event-section mb-5 p-4 border rounded shadow">
         <h3 class="display-4">Etkinliklere Göz At</h3>
-        <p class="lead">Mevcut etkinlikleri gözden geçirin, katılmak için ilginç bir etkinlik bulun. İlginizi çeken etkinliklere hemen kaydolun!</p>
+        <p class="lead" style="color:white">Mevcut etkinlikleri gözden geçirin, katılmak için ilginç bir etkinlik bulun. İlginizi çeken etkinliklere hemen kaydolun!</p>
 
         <img src="~/img/joinEvents.jpeg" alt="Etkinliklere Göz At" class="img-fluid mb-3 rounded shadow-lg" width="250px" height="250px" />
 
-        <p><strong>Öne Çıkan Etkinlikler:</strong></p>
+        <p style="color:white"><strong>Öne Çıkan Etkinlikler:</strong></p>
         <div class="card mb-3">
-            <div class="card-body">
-                <h5 class="card-title">Müzik Konseri</h5>
-                <p class="card-text"><strong>Tarih:</strong> 25 Aralık 2024</p>
-                <p class="card-text"><strong>Şehir:</strong> İstanbul</p>
+            <div class="boddy card-body">
+                <h5 class="card-title" style="color:white">Müzik Konseri</h5>
+                <p class="card-text" style="color:white"><strong>Tarih:</strong> 25 Aralık 2024</p>
+                <p class="card-text" style="color:white"><strong>Şehir:</strong> İstanbul</p>
                 <a href="@Url.Action("EventDetails", "Events", new { id = 1 })" class="btn btn-info">Detayları Gör</a>
             </div>
         </div>
 
         <div class="card mb-3">
-            <div class="card-body">
-                <h5 class="card-title">Teknoloji Konferansı</h5>
-                <p class="card-text"><strong>Tarih:</strong> 30 Aralık 2024</p>
-                <p class="card-text"><strong>Şehir:</strong> Ankara</p>
+            <div class="boddy card-body">
+                <h5 class="card-title" style="color:white">Teknoloji Konferansı</h5>
+                <p class="card-text" style="color:white"><strong>Tarih:</strong> 30 Aralık 2024</p>
+                <p class="card-text" style="color:white"><strong>Şehir:</strong> Ankara</p>
                 <a href="@Url.Action("EventDetails", "Events", new { id = 2 })" class="btn btn-info">Detayları Gör</a>
             </div>
         </div>
@@ -125,27 +199,27 @@
         <a href="@Url.Action("BrowseEvents", "Events")" class="btn btn-secondary btn-lg">Etkinliklere Göz At</a>
     </div>
 
-    <div class="event-section p-4 border rounded shadow">
+    <div class="boddy event-section p-4 border rounded shadow">
         <h3 class="display-4">Etkinlik Geçmişim</h3>
-        <p class="lead">Katıldığınız ve geçmişte düzenlediğiniz etkinliklerinizi inceleyin. Daha önceki etkinliklerinize göz atarak katıldığınız toplulukları keşfedin.</p>
+        <p class="lead" style="color:white">Katıldığınız ve geçmişte düzenlediğiniz etkinliklerinizi inceleyin. Daha önceki etkinliklerinize göz atarak katıldığınız toplulukları keşfedin.</p>
 
         <img src="~/img/historyEvents.jpeg" alt="Etkinlik Geçmişim" class="img-fluid mb-3 rounded shadow-lg" width="250px" height="250px" />
 
-        <p><strong>Geçmiş Etkinlikler:</strong></p>
+        <p style="color:white"><strong>Geçmiş Etkinlikler:</strong></p>
         <div class="card mb-3">
-            <div class="card-body">
-                <h5 class="card-title">Sosyal Medya Pazarlama Eğitimi</h5>
-                <p class="card-text"><strong>Tarih:</strong> 10 Kasım 2024</p>
-                <p class="card-text"><strong>Şehir:</strong> İzmir</p>
+            <div class="boddy card-body">
+                <h5 class="card-title" style="color:white">Sosyal Medya Pazarlama Eğitimi</h5>
+                <p class="card-text" style="color:white"><strong>Tarih:</strong> 10 Kasım 2024</p>
+                <p class="card-text" style="color:white"><strong>Şehir:</strong> İzmir</p>
                 <a href="@Url.Action("EventDetails", "Events", new { id = 3 })" class="btn btn-warning">Detayları Gör</a>
             </div>
         </div>
 
         <div class="card mb-3">
-            <div class="card-body">
-                <h5 class="card-title">Yoga Workshop</h5>
-                <p class="card-text"><strong>Tarih:</strong> 5 Kasım 2024</p>
-                <p class="card-text"><strong>Şehir:</strong> İstanbul</p>
+            <div class="boddy card-body">
+                <h5 class="card-title" style="color:white">Yoga Workshop</h5>
+                <p class="card-text" style="color:white"><strong>Tarih:</strong> 5 Kasım 2024</p>
+                <p class="card-text" style="color:white"><strong>Şehir:</strong> İstanbul</p>
                 <a href="@Url.Action("EventDetails", "Events", new { id = 4 })" class="btn btn-warning">Detayları Gör</a>
             </div>
         </div>

@@ -13,7 +13,14 @@
         border-radius: 8px;
         padding: 20px;
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        margin-top: 20px;
     }
+
+        .filter-panel:hover {
+            transform: scale(1.05); 
+            box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+        }
 
         .filter-panel h4 {
             font-size: 1.5em;
@@ -34,6 +41,9 @@
         border-radius: 8px;
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         transition: transform 0.3s ease, box-shadow 0.3s ease;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
     }
 
         .card:hover {
@@ -49,6 +59,7 @@
 
     .card-body {
         padding: 20px;
+        flex-grow: 1;
     }
 
     .card-title {
@@ -84,20 +95,44 @@
             color: #0056b3;
         }
 
-
-    .filter-panel {
-        padding: 15px;
+    .row .col-12 {
+        margin-bottom: 20px;
     }
 
-    .card-img-top {
-        height: 150px;
+    .col-12.col-md-4 {
+        display: flex;
+        justify-content: center;
     }
 
+    .card {
+        width: 100%;
+        max-width: 350px;
+    }
+
+    .card-body a {
+        text-decoration: none;
+    }
+
+  
+    .discover-header {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+   
+    .col-12.col-md-3 {
+        margin-top: 30px;
     }
 </style>
 
 <div class="container mt-5">
+    <div class="discover-header">
+        <h2>Keşfet Etkinlikleri</h2>
+    </div>
+
     <div class="row">
+        <!-- Filtrele Paneli -->
         <div class="col-12 col-md-3">
             <div class="filter-panel shadow-lg p-4 rounded">
                 <h4>Filtrele</h4>
@@ -139,14 +174,13 @@
                     <label for="EventSearch">Ara</label>
                     <input type="text" class="form-control" id="EventSearch" name="EventSearch" placeholder="Etkinlik arayın..." />
                 </div>
-
+                <br />
                 <button class="btn btn-primary w-100">Filtrele</button>
             </div>
         </div>
 
+        <!-- Etkinlik Kartları -->
         <div class="col-12 col-md-9">
-            <h2 class="text-center mb-4">Keşfet Etkinlikleri</h2>
-
             <div id="event-cards" class="row">
                 <div class="col-12 col-md-4 mb-4">
                     <div class="card shadow-lg rounded">
