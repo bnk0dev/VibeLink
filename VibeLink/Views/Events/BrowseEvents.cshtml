@@ -4,8 +4,8 @@
 }
 
 <style>
-    .container {
-        max-width: 1200px;
+    body{
+        color:white;
     }
 
     .filter-panel {
@@ -69,7 +69,7 @@
 
     .card-text {
         font-size: 1.1em;
-        color: #555;
+        color: white;
     }
 
         .card-text.text-muted {
@@ -126,111 +126,116 @@
     }
 </style>
 
-<div class="container mt-5">
-    <div class="discover-header">
-        <h2>Keşfet Etkinlikleri</h2>
-    </div>
+<body>
 
-    <div class="row">
-        <!-- Filtrele Paneli -->
-        <div class="col-12 col-md-3">
-            <div class="filter-panel shadow-lg p-4 rounded">
-                <h4>Filtrele</h4>
-                <hr />
-
-                <div class="form-group">
-                    <label for="EventType">Etkinlik Tipi</label>
-                    <select class="form-control" id="EventType" name="EventType">
-                        <option value="upcoming">Yaklaşan Etkinlikler</option>
-                        <option value="past">Geçmiş Etkinlikler</option>
-                        <option value="ongoing">Devam Eden Etkinlikler</option>
-                    </select>
-                </div>
-
-                <div class="form-group">
-                    <label for="EventCity">Şehir</label>
-                    <select class="form-control" id="EventCity" name="EventCity">
-                        <option value="">Tüm Şehirler</option>
-                        <option value="Istanbul">İstanbul</option>
-                        <option value="Ankara">Ankara</option>
-                        <option value="Izmir">İzmir</option>
-                        <option value="Bursa">Bursa</option>
-                    </select>
-                </div>
-
-                <div class="form-group">
-                    <label for="EventTopic">Konu</label>
-                    <select class="form-control" id="EventTopic" name="EventTopic">
-                        <option value="">Tüm Konular</option>
-                        <option value="Technology">Teknoloji</option>
-                        <option value="Music">Müzik</option>
-                        <option value="Sports">Spor</option>
-                        <option value="Education">Eğitim</option>
-                        <option value="Health">Sağlık</option>
-                    </select>
-                </div>
-
-                <div class="form-group">
-                    <label for="EventSearch">Ara</label>
-                    <input type="text" class="form-control" id="EventSearch" name="EventSearch" placeholder="Etkinlik arayın..." />
-                </div>
-                <br />
-                <button class="btn btn-primary w-100">Filtrele</button>
-            </div>
+    <div class="container mt-5">
+        <div class="discover-header">
+            <h2>Keşfet Etkinlikleri</h2>
         </div>
 
-        <!-- Etkinlik Kartları -->
-        <div class="col-12 col-md-9">
-            <div id="event-cards" class="row">
-                <div class="col-12 col-md-4 mb-4">
-                    <div class="card shadow-lg rounded">
-                        <img class="card-img-top" src="~/Content/images/event1.jpg" alt="Etkinlik Resmi">
-                        <div class="card-body">
-                            <h5 class="card-title">Teknoloji Konferansı</h5>
-                            <p class="card-text">Teknoloji dünyasında en yeni trendleri keşfedin.</p>
-                            <p class="card-text text-muted">Tarih: 15 Mart 2024</p>
-                            <p class="card-text">Şehir: İstanbul</p>
-                            <a href="#" class="btn btn-primary">Detaylar</a>
-                        </div>
-                    </div>
-                </div>
+        <div class="row">
+            <!-- Filtrele Paneli -->
+            <div class="col-12 col-md-3">
+                <div class="filter-panel shadow-lg p-4 rounded">
+                    <h4>Filtrele</h4>
+                    <hr />
 
-                <div class="col-12 col-md-4 mb-4">
-                    <div class="card shadow-lg rounded">
-                        <img class="card-img-top" src="~/Content/images/event2.jpg" alt="Etkinlik Resmi">
-                        <div class="card-body">
-                            <h5 class="card-title">Müzik Festivali</h5>
-                            <p class="card-text">Yerli ve yabancı sanatçılarla dolu bir festival.</p>
-                            <p class="card-text text-muted">Tarih: 7 Aralık 2024</p>
-                            <p class="card-text">Şehir: Ankara</p>
-                            <a href="#" class="btn btn-primary">Detaylar</a>
-                        </div>
+                    <div class="form-group">
+                        <label for="EventType">Etkinlik Tipi</label>
+                        <select class="form-control" id="EventType" name="EventType">
+                            <option value="upcoming">Yaklaşan Etkinlikler</option>
+                            <option value="past">Geçmiş Etkinlikler</option>
+                            <option value="ongoing">Devam Eden Etkinlikler</option>
+                        </select>
                     </div>
-                </div>
 
-                <div class="col-12 col-md-4 mb-4">
-                    <div class="card shadow-lg rounded">
-                        <img class="card-img-top" src="~/Content/images/event3.jpg" alt="Etkinlik Resmi">
-                        <div class="card-body">
-                            <h5 class="card-title">Spor Yarışması</h5>
-                            <p class="card-text">Büyük spor etkinliği geçtiğimiz yıl büyük ilgi gördü.</p>
-                            <p class="card-text text-muted">Tarih: 20 Kasım 2023</p>
-                            <p class="card-text">Şehir: İzmir</p>
-                            <a href="#" class="btn btn-primary">Detaylar</a>
-                        </div>
+                    <div class="form-group">
+                        <label for="EventCity">Şehir</label>
+                        <select class="form-control" id="EventCity" name="EventCity">
+                            <option value="">Tüm Şehirler</option>
+                            <option value="Istanbul">İstanbul</option>
+                            <option value="Ankara">Ankara</option>
+                            <option value="Izmir">İzmir</option>
+                            <option value="Bursa">Bursa</option>
+                        </select>
                     </div>
+
+                    <div class="form-group">
+                        <label for="EventTopic">Konu</label>
+                        <select class="form-control" id="EventTopic" name="EventTopic">
+                            <option value="">Tüm Konular</option>
+                            <option value="Technology">Teknoloji</option>
+                            <option value="Music">Müzik</option>
+                            <option value="Sports">Spor</option>
+                            <option value="Education">Eğitim</option>
+                            <option value="Health">Sağlık</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="EventSearch">Ara</label>
+                        <input type="text" class="form-control" id="EventSearch" name="EventSearch" placeholder="Etkinlik arayın..." />
+                    </div>
+                    <br />
+                    <button class="btn btn-primary w-100">Filtrele</button>
                 </div>
             </div>
 
-            <div class="pagination-container text-center mt-5">
-                <ul class="pagination">
-                    <li class="page-item"><a class="page-link" href="#">«</a></li>
-                    <li class="page-item active"><a class="page-link" href="#">1</a></li>
-                    <li class="page-item"><a class="page-link" href="#">2</a></li>
-                    <li class="page-item"><a class="page-link" href="#">3</a></li>
-                    <li class="page-item"><a class="page-link" href="#">»</a></li>
-                </ul>
+            <!-- Etkinlik Kartları -->
+            <div class="col-12 col-md-9">
+                <div id="event-cards" class="row">
+                    <div class="col-12 col-md-4 mb-4">
+                        <div class="card shadow-lg rounded">
+                            <img class="card-img-top" src="~/Content/images/event1.jpg" alt="Etkinlik Resmi">
+                            <div class="card-body">
+                                <h5 class="card-title">Teknoloji Konferansı</h5>
+                                <p class="card-text" style="color:white">Teknoloji dünyasında en yeni trendleri keşfedin.</p>
+                                <p class="card-text" style="color:white">Tarih: 15 Mart 2024</p>
+                                <p class="card-text" style="color:white">Şehir: İstanbul</p>
+                                <a href="#" class="btn btn-primary">Detaylar</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-4 mb-4">
+                        <div class="card shadow-lg rounded">
+                            <img class="card-img-top" src="~/Content/images/event2.jpg" alt="Etkinlik Resmi">
+                            <div class="card-body">
+                                <h5 class="card-title">Müzik Festivali</h5>
+                                <p class="card-text" style="color:white">Yerli ve yabancı sanatçılarla dolu bir festival.</p>
+                                <p class="card-text" style="color:white">Tarih: 7 Aralık 2024</p>
+                                <p class="card-text" style="color:white">Şehir: Ankara</p>
+                                <a href="#" class="btn btn-primary">Detaylar</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-4 mb-4">
+                        <div class="card shadow-lg rounded">
+                            <img class="card-img-top" src="~/Content/images/event3.jpg" alt="Etkinlik Resmi">
+                            <div class="card-body">
+                                <h5 class="card-title">Spor Yarışması</h5>
+                                <p class="card-text" style="color:white">Büyük spor etkinliği geçtiğimiz yıl büyük ilgi gördü.</p>
+                                <p class="card-text" style="color:white">Tarih: 20 Kasım 2023</p>
+                                <p class="card-text" style="color:white">Şehir: İzmir</p>
+                                <a href="#" class="btn btn-primary">Detaylar</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pagination-container text-center mt-5">
+                    <ul class="pagination">
+                        <li class="page-item"><a class="page-link" href="#">«</a></li>
+                        <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                        <li class="page-item"><a class="page-link" href="#">»</a></li>
+                    </ul>
+                </div>
             </div>
         </div>
     </div>
-</div>
+
+</body>
+
