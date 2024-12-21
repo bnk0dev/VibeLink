@@ -1,6 +1,3 @@
-
-
-/* Diðer stiller */
 header {
     background: linear-gradient(135deg, #20232A, #3C3F51, #0ce8e1);
     color: white;
@@ -190,3 +187,7 @@ body {
         transform: translateY(-2px);
         box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
     }
+
+div{
+    color: white;
+}
